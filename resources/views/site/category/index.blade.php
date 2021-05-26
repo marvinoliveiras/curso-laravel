@@ -1,5 +1,4 @@
 @extends('layouts.site')
-
 @section('content')
     <header class="common-header">
         <div class="header-wrapper">
@@ -12,7 +11,7 @@
         <section class="products__cultivation__category main-wrapper">
             @foreach($categories as $category)
                 <article class="card__product">
-                    <a href="{{route('site.products.category', ['category' => $category])}}">
+                    <a href="{{route('site.products.category', ['category' => $category->id])}}">
                         <div class="card__cover">
                             <img src="{{asset($category->image)}}">
                         </div>
