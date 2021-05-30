@@ -20,7 +20,7 @@ class CategoryController extends Controller
      * @param $category
      */
     public function show(Category $category)
-    {//dd($category);exit;
+    {
         return view('site.category.show',[
             'category' => $category
                 ->load('products')

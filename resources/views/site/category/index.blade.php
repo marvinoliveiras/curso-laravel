@@ -11,7 +11,7 @@
         <section class="products__cultivation__category main-wrapper">
             @foreach($categories as $category)
                 <article class="card__product">
-                    <a href="{{route('site.products.category', ['category' => $category->id])}}">
+                    <a href="{{route('site.products.category', ['category' => $category->slug])}}">
                         <div class="card__cover">
                             <img src="{{asset($category->image)}}">
                         </div>

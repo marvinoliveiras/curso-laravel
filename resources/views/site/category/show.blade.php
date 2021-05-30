@@ -7,7 +7,6 @@
         </div>
         <div class="pattern__header"></div>
     </header>
-
     <div class="products__general main-wrapper">
 
         <aside class="product__selected">
